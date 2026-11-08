@@ -1,4 +1,4 @@
-/* ---------- Colors & basics ---------- */
+
 :root {
   --navy: #0e2238;
   --navy-light: #16324f;
@@ -32,7 +32,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline-offset: 2px;
 }
 
-/* ---------- Buttons ---------- */
+
 .btn {
   display: inline-block;
   padding: 10px 24px;
@@ -51,7 +51,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .btn-navy { background: var(--navy); color: var(--white); }
 .btn-navy:hover { background: var(--navy-light); }
 
-/* ---------- Navbar ---------- */
+
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -87,7 +87,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   cursor: pointer;
 }
 
-/* ---------- Home ---------- */
+
 .hero {
   min-height: 100vh;
   padding: 110px 8% 60px;
@@ -121,7 +121,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .photo-circle img { width: 100%; height: 100%; object-fit: cover; }
 
-/* ---------- About ---------- */
+
 .about {
   padding: 100px 8%;
   background:
@@ -180,7 +180,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .social svg { width: 22px; height: 22px; }
 .social:hover { background: var(--yellow); color: var(--navy); transform: translateY(-2px); }
 
-/* ---------- Projects & Certificates ---------- */
+
 .projects {
   padding: 100px 8%;
   color: var(--white);
@@ -209,7 +209,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .card-body h3 { font-size: 1.6rem; }
 .card-body p { color: #5b6e80; margin: 4px 0 14px; }
 
-/* ---------- Contact ---------- */
+
 .contact {
   padding: 100px 8%;
   display: flex;
@@ -247,7 +247,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ---------- Details popup (boarding pass) ---------- */
+
 .pass {
   margin: auto;
   width: min(92vw, 520px);
@@ -282,7 +282,7 @@ footer {
 .pass ul { padding-left: 20px; }
 .pass-foot { padding: 14px 26px 22px; text-align: right; }
 
-/* ---------- Mobile ---------- */
+
 @media (max-width: 800px) {
   .menu-btn { display: block; }
   .nav nav {

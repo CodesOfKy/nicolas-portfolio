@@ -1,7 +1,6 @@
-/* ---------- 1. EDIT THESE ---------- */
-const MY_EMAIL = "nicolasgiovani.francisco@cvsu.edu.ph"; // <- put your Gmail here
 
-// Template details for each card. Replace the text with your own.
+const MY_EMAIL = "nicolasgiovani.francisco@cvsu.edu.ph"; 
+
 const projects = {
   royal: {
     title: "Royal Air",
@@ -58,7 +57,7 @@ const projects = {
   }
 };
 
-/* ---------- 2. Mobile menu ---------- */
+
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
@@ -74,7 +73,6 @@ navLinks.querySelectorAll("a").forEach(link => {
   });
 });
 
-/* ---------- 3. Highlight the current section in the navbar ---------- */
 const sections = document.querySelectorAll("section[id]");
 const links = navLinks.querySelectorAll("a");
 
@@ -90,7 +88,6 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(section => observer.observe(section));
 
-/* ---------- 4. Details popup ---------- */
 const modal = document.getElementById("detailsModal");
 
 document.querySelectorAll("[data-project]").forEach(button => {
@@ -119,12 +116,12 @@ document.querySelectorAll("[data-project]").forEach(button => {
 
 document.getElementById("closeModal").addEventListener("click", () => modal.close());
 
-// Click the dark area outside the popup to close it
+
 modal.addEventListener("click", event => {
   if (event.target === modal) modal.close();
 });
 
-/* ---------- 5. Contact form -> opens Gmail ---------- */
+
 document.getElementById("contactForm").addEventListener("submit", event => {
   event.preventDefault();
 
